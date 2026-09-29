@@ -53,7 +53,7 @@ const translations = {
     trackingPlaceholder: "Ex. AYS-2408-0192",
     trackingButtonLabel: "Track cargo",
     trackingRequired: "Please enter a tracking number.",
-    trackingReady: (value: string) => `${value} status updates are being prepared.`,
+    trackingReady: (value: string) => `It is currently under construction, you will be able to use it when the improvements are completed!`,
     portalNote: "The portal is expanding with new features soon.",
     historyEyebrow: "02 / History",
     historyTitle: ["Our journey", "continues."],
@@ -102,7 +102,7 @@ const translations = {
     trackingPlaceholder: "Örn. AYS-2408-0192",
     trackingButtonLabel: "Yükü takip et",
     trackingRequired: "Lütfen bir takip numarası girin.",
-    trackingReady: (value: string) => `${value} için güncel hareketler hazırlanıyor.`,
+    trackingReady: (value: string) => `Henüz yapım aşamasındadır, geliştirmeler tamamlandığında kullanabileceksin!`,
     portalNote: "Portal yakında yeni özelliklerle büyüyor.",
     historyEyebrow: "02 / Tarihçe",
     historyTitle: ["Yolculuğumuz", "devam ediyor."],
@@ -151,7 +151,7 @@ const translations = {
     trackingPlaceholder: "Пример: AYS-2408-0192",
     trackingButtonLabel: "Следете товара",
     trackingRequired: "Моля, въведете номер за проследяване.",
-    trackingReady: (value: string) => `Подготвяме актуализации за ${value}.`,
+    trackingReady: (value: string) => `В момента е в процес на изграждане, ще можете да го използвате, когато подобренията приключат!`,
     portalNote: "Порталът скоро ще се разшири с нови функции.",
     historyEyebrow: "02 / История",
     historyTitle: ["Нашето пътуване", "продължава."],
@@ -271,10 +271,10 @@ export default function Home() {
   }
 
   const trackingLocations = {
-    sea: locale === "tr" ? "Son konum: İstanbul Limanı · Hamburg rotası" : locale === "bg" ? "Последна позиция: пристанище Истанбул · маршрут Хамбург" : "Last location: Istanbul Port · Hamburg route",
-    air: locale === "tr" ? "Son konum: İstanbul Havalimanı · Hamburg varışı" : locale === "bg" ? "Последна позиция: летище Истанбул · пристигане в Хамбург" : "Last location: Istanbul Airport · Hamburg arrival",
-    road: locale === "tr" ? "Son konum: İstanbul · Avrupa karayolu hattı" : locale === "bg" ? "Последна позиция: Истанбул · европейски автомобилен маршрут" : "Last location: Istanbul · European road corridor",
-    van: locale === "tr" ? "Son konum: Hamburg dağıtım merkezi · son kilometre" : locale === "bg" ? "Последна позиция: дистрибуционен център Хамбург · последна миля" : "Last location: Hamburg distribution hub · last mile",
+    sea: "",
+    air: "",
+    road: "",
+    van: "",
   };
 
   return (
@@ -460,7 +460,7 @@ export default function Home() {
           <div className="contact-info">
             <p>{t.contactText}</p>
             <a href="mailto:info@aysline.com">info@aysline.com <span>↗</span></a>
-            <a href="tel:+3892970297">+389 297 0 297</a>
+            
             <address>Ays Logistics Solutions Eood, Maritsa Blvd. 69, Floor 1, Office 3. Plovdiv, Bulgaria</address>
           </div>
         </section>
