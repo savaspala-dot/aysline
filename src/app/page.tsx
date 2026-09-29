@@ -461,7 +461,7 @@ export default function Home() {
             <p>{t.contactText}</p>
             <a href="mailto:info@aysline.com">info@aysline.com <span>↗</span></a>
             <a href="tel:+3892970297">+389 297 0 297</a>
-            <address>Plovdiv, Bulgaria</address>
+            <address>Ays Logistics Solutions Eood, Maritsa Blvd. 69, Floor 1, Office 3. Plovdiv, Bulgaria</address>
           </div>
         </section>
       </main>
